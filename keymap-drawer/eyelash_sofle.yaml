@@ -104,7 +104,7 @@ layers:
   - KP 5
   - KP 6
   - KP 0
-  - INS
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: Sft+`, s: Sft+~}
   - {t: Sft+-, s: Sft+_}
   - {t: '=', s: +}
@@ -117,7 +117,7 @@ layers:
   - KP 2
   - KP 3
   - KP DOT
-  - PRINTSCREEN
+  - INS
   - $$mdi:volume-off$$
   - {t: LAYER0, h: toggle}
   - {t: ']', s: '}'}
