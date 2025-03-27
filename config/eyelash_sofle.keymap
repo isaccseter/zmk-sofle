@@ -63,8 +63,8 @@
             bindings = <
 &kp F11        &kp F1            &kp F2             &kp F3                 &kp F4            &kp F5                  &mmv MOVE_UP     &kp F6           &kp F7           &kp F8           &kp F9           &kp F10          &to 2
 &kp GRAVE      &kp LS(NUMBER_1)  &kp LS(NUMBER_2)   &kp LS(NUMBER_3)       &kp LS(NUMBER_4)  &kp LS(NUMBER_5)        &mmv MOVE_DOWN   &kp KP_PLUS      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS     &kp F12
-&kp MINUS      &kp LS(NUMBER_6)  &kp LS(NUMBER_7)   &kp LS(NUMBER_8)       &kp LS(NUMBER_9)  &kp LS(NUMBER_0)        &mmv MOVE_LEFT   &kp KP_MULTIPLY  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_NUMBER_0  &kp INS
-&kp LS(GRAVE)  &kp LS(MINUS)     &kp EQUAL          &kp LS(EQUAL)          &kp LEFT_BRACKET  &kp LS(LEFT_BRACKET)    &mmv MOVE_RIGHT  &kp KP_DIVIDE    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT       &kp PRINTSCREEN
+&kp MINUS      &kp LS(NUMBER_6)  &kp LS(NUMBER_7)   &kp LS(NUMBER_8)       &kp LS(NUMBER_9)  &kp LS(NUMBER_0)        &mmv MOVE_LEFT   &kp KP_MULTIPLY  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_NUMBER_0  &kp BACKSPACE
+&kp LS(GRAVE)  &kp LS(MINUS)     &kp EQUAL          &kp LS(EQUAL)          &kp LEFT_BRACKET  &kp LS(LEFT_BRACKET)    &mmv MOVE_RIGHT  &kp KP_DIVIDE    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT       &kp INS
 &kp C_MUTE     &to 0             &kp RIGHT_BRACKET  &kp LS(RIGHT_BRACKET)  &kp LEFT_SHIFT    &trans                  &mkp LCLK        &trans           &trans           &trans           &trans           &trans
             >;
 
