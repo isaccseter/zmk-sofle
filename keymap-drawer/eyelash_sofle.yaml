@@ -14,7 +14,7 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - {t: layer1, h: toggle}
-  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:keyboard-tab$$', h: 'Gui+$$mdi:keyboard-tab$$'}
   - Q
   - W
   - E
@@ -55,7 +55,7 @@ layers:
   - {t: '`', s: '~'}
   - APPLICATION
   - {t: layer1, h: toggle}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:apple-keyboard-caps$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - $$mdi:keyboard-space$$
   - '&tdCS'
@@ -64,7 +64,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - layer1
   - LEFT WIN
-  - {t: 'Alt+$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
+  - Ctl+$$mdi:keyboard-space$$
   layer1:
   - F11
   - F1
