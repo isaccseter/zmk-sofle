@@ -55,7 +55,7 @@
 &kp K_APPLICATION  &to 1   &kp DELETE  &sk LEFT_SHIFT  &kp SPACE  &tdCS     &kp RETURN     &kp LEFT_ALT  &kp ENTER  &mo 1      &kp LEFT_WIN  &kp LC(SPACE)
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
+            sensor-bindings = <&scroll_encoder>;
             display-name = "LAYER0";
         };
 
@@ -69,7 +69,7 @@
             >;
 
             display-name = "layer1";
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
         };
 
         layer_2 {
@@ -81,7 +81,7 @@
 &trans     &trans        &trans          &kp LEFT_SHIFT  &kp SPACE     &tdCS           &mkp LCLK        &tdCS         &kp RETURN    &kp K_APPLICATION  &trans        &trans
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp RIGHT_BRACKET LEFT_BRACKET>;
         };
 
         layer_3 {
