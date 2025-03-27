@@ -48,11 +48,11 @@
 
         layer0 {
             bindings = <
-&kp ESC            &kp N1  &kp N2  &kp N3          &kp N4     &kp N5              &kp PAGE_UP    &kp N6        &kp N7     &kp N8     &kp N9        &kp N0                &to 1
-&kp TAB            &kp Q   &kp W   &kp E           &kp R      &kp T               &kp PAGE_DOWN  &kp Y         &kp U      &kp I      &kp O         &kp P                 &kp BSLH
-&kp DELETE         &kp A   &kp S   &kp D           &kp F      &kp G               &kp HOME       &kp H         &kp J      &kp K      &kp L         &kp SEMI              &kp APOS
-&mo 2              &kp Z   &kp X   &kp C           &kp V      &kp B               &kp END        &kp N         &kp M      &kp COMMA  &kp DOT       &kp FSLH              &kp GRAVE
-&kp K_APPLICATION  &to 1   &none   &sk LEFT_SHIFT  &kp SPACE  &tdCS               &kp RETURN     &kp LEFT_ALT  &kp ENTER  &mo 1      &kp LEFT_WIN  &sk LA(LEFT_CONTROL)
+&kp ESC            &kp N1  &kp N2               &kp N3          &kp N4     &kp N5    &kp PAGE_UP    &kp N6        &kp N7     &kp N8     &kp N9        &kp N0         &to 1
+&mt LG(TAB) TAB    &kp Q   &kp W                &kp E           &kp R      &kp T     &kp PAGE_DOWN  &kp Y         &kp U      &kp I      &kp O         &kp P          &kp BSLH
+&kp DELETE         &kp A   &kp S                &kp D           &kp F      &kp G     &kp HOME       &kp H         &kp J      &kp K      &kp L         &kp SEMI       &kp APOS
+&mo 2              &kp Z   &kp X                &kp C           &kp V      &kp B     &kp END        &kp N         &kp M      &kp COMMA  &kp DOT       &kp FSLH       &kp GRAVE
+&kp K_APPLICATION  &to 1   &mt LEFT_SHIFT CAPS  &sk LEFT_SHIFT  &kp SPACE  &tdCS     &kp RETURN     &kp LEFT_ALT  &kp ENTER  &mo 1      &kp LEFT_WIN  &kp LC(SPACE)
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
@@ -74,11 +74,11 @@
 
         layer_2 {
             bindings = <
-&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4        &mmv MOVE_UP     &bt BT_SEL 0      &bt BT_SEL 1  &bt BT_SEL 2       &bt BT_SEL 3  &bt BT_CLR   &bt BT_CLR_ALL
-&trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans          &trans        &trans              &mmv MOVE_DOWN   &trans            &kp F5        &kp UP             &kp F12       &kp UNDER    &kp PLUS
-&trans     &out OUT_USB  &out OUT_BLE    &trans          &trans        &trans              &mmv MOVE_LEFT   &trans            &kp LEFT      &kp DOWN           &kp RIGHT     &kp LBRC     &kp RBRC
-&trans     &none         &none           &bootloader     &trans        &trans              &mmv MOVE_RIGHT  &trans            &trans        &sys_reset         &soft_off     &bootloader  &trans
-&trans     &trans        &trans          &kp LEFT_SHIFT  &kp SPACE     &tdCS               &mkp LCLK        &tdCS             &kp RETURN    &kp K_APPLICATION  &trans        &trans
+&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2       &bt BT_SEL 3  &bt BT_CLR   &bt BT_CLR_ALL
+&trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans          &trans        &trans          &mmv MOVE_DOWN   &trans        &kp F5        &kp UP             &kp F12       &kp UNDER    &kp PLUS
+&trans     &out OUT_USB  &out OUT_BLE    &trans          &trans        &trans          &mmv MOVE_LEFT   &trans        &kp LEFT      &kp DOWN           &kp RIGHT     &kp LBRC     &kp RBRC
+&trans     &none         &none           &bootloader     &trans        &trans          &mmv MOVE_RIGHT  &trans        &trans        &sys_reset         &soft_off     &bootloader  &trans
+&trans     &trans        &trans          &kp LEFT_SHIFT  &kp SPACE     &tdCS           &mkp LCLK        &tdCS         &kp RETURN    &kp K_APPLICATION  &trans        &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
