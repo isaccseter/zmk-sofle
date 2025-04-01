@@ -6,7 +6,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
@@ -74,11 +73,11 @@
 
         layer_2 {
             bindings = <
-&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2       &bt BT_SEL 3  &bt BT_CLR   &to 0
-&trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans          &trans        &trans          &mmv MOVE_DOWN   &bt BT_CLR_ALL  &kp F5        &kp UP             &kp F12       &kp UNDER    &kp PLUS
-&trans     &out OUT_USB  &out OUT_BLE    &trans          &trans        &trans          &mmv MOVE_LEFT   &trans          &kp LEFT      &kp DOWN           &kp RIGHT     &kp LBRC     &kp RBRC
-&trans     &none         &none           &bootloader     &trans        &trans          &mmv MOVE_RIGHT  &trans          &trans        &sys_reset         &soft_off     &bootloader  &trans
-&trans     &trans        &trans          &kp LEFT_SHIFT  &kp SPACE     &tdCS           &mkp LCLK        &tdCS           &kp RETURN    &kp K_APPLICATION  &trans        &trans
+&kp ESC  &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &mmv MOVE_UP     &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2       &bt BT_SEL 3  &bt BT_CLR   &to 0
+&kp K    &bt BT_CLR      &kp Q         &kp W         &kp E         &kp R           &mmv MOVE_DOWN   &bt BT_CLR_ALL  &kp F5        &kp UP             &kp F12       &kp UNDER    &kp PLUS
+&kp H    &kp LEFT_SHIFT  &kp A         &kp S         &kp D         &kp F           &mmv MOVE_LEFT   &trans          &kp LEFT      &kp DOWN           &kp RIGHT     &kp LBRC     &kp RBRC
+&kp L    &kp T           &kp Z         &kp X         &kp C         &kp V           &mmv MOVE_RIGHT  &trans          &trans        &sys_reset         &soft_off     &bootloader  &trans
+&trans   &kp M           &kp B         &kp LCTRL     &kp SPACE     &kp G           &mkp LCLK        &tdCS           &kp RETURN    &kp K_APPLICATION  &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT_BRACKET LEFT_BRACKET>;
