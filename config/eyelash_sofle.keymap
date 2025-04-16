@@ -34,11 +34,11 @@
     };
 
     behaviors {
-        tdCS: tap_dance_0 {
+        tdCA: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp LCTRL>, <&kp LS(LCTRL)>;
+            bindings = <&kp LCTRL>, <&kp LA(LCTRL)>;
         };
     };
 
@@ -47,11 +47,11 @@
 
         layer0 {
             bindings = <
-&kp ESC            &kp N1  &kp N2      &kp N3          &kp N4     &kp N5    &kp PAGE_UP    &kp N6        &kp N7     &kp N8     &kp N9        &kp N0         &to 1
-&mt LG(TAB) TAB    &kp Q   &kp W       &kp E           &kp R      &kp T     &kp PAGE_DOWN  &kp Y         &kp U      &kp I      &kp O         &kp P          &kp BSLH
-&kp BACKSPACE      &kp A   &kp S       &kp D           &kp F      &kp G     &kp HOME       &kp H         &kp J      &kp K      &kp L         &kp SEMI       &kp APOS
-&mo 2              &kp Z   &kp X       &kp C           &kp V      &kp B     &kp END        &kp N         &kp M      &kp COMMA  &kp DOT       &kp FSLH       &kp GRAVE
-&kp K_APPLICATION  &to 1   &kp DELETE  &sk LEFT_SHIFT  &kp SPACE  &tdCS     &kp RETURN     &kp LEFT_ALT  &kp ENTER  &mo 1      &kp LEFT_WIN  &kp LC(SPACE)
+&kp ESC            &kp N1  &kp N2      &kp N3                 &kp N4     &kp N5    &kp PAGE_UP    &kp N6          &kp N7     &kp N8     &kp N9              &kp N0         &to 2
+&mt LG(TAB) TAB    &kp Q   &kp W       &kp E                  &kp R      &kp T     &kp PAGE_DOWN  &kp Y           &kp U      &kp I      &kp O               &kp P          &kp BSLH
+&kp BACKSPACE      &kp A   &kp S       &kp D                  &kp F      &kp G     &kp HOME       &kp H           &kp J      &kp K      &kp L               &kp SEMI       &kp APOS
+&mo 3              &kp Z   &kp X       &kp C                  &kp V      &kp B     &kp END        &kp N           &kp M      &kp COMMA  &kp DOT             &kp FSLH       &kp GRAVE
+&kp K_APPLICATION  &to 2   &kp DELETE  &mt LEFT_ALT CAPSLOCK  &kp SPACE  &tdCA     &kp RETURN     &kp LEFT_SHIFT  &kp ENTER  &mo 2      &mt LG(X) LEFT_WIN  &kp LC(SPACE)
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -60,11 +60,11 @@
 
         layer_1 {
             bindings = <
-&kp F11        &kp F1            &kp F2             &kp F3                 &kp F4            &kp F5                  &mmv MOVE_UP     &kp F6           &kp F7           &kp F8           &kp F9           &kp F10          &to 2
-&kp GRAVE      &kp LS(NUMBER_1)  &kp LS(NUMBER_2)   &kp LS(NUMBER_3)       &kp LS(NUMBER_4)  &kp LS(NUMBER_5)        &mmv MOVE_DOWN   &kp KP_PLUS      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS     &kp F12
-&kp MINUS      &kp LS(NUMBER_6)  &kp LS(NUMBER_7)   &kp LS(NUMBER_8)       &kp LS(NUMBER_9)  &kp LS(NUMBER_0)        &mmv MOVE_LEFT   &kp KP_MULTIPLY  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_NUMBER_0  &kp BACKSPACE
-&kp LS(GRAVE)  &kp LS(MINUS)     &kp EQUAL          &kp LS(EQUAL)          &kp LEFT_BRACKET  &kp LS(LEFT_BRACKET)    &mmv MOVE_RIGHT  &kp KP_DIVIDE    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT       &kp INS
-&kp C_MUTE     &to 0             &kp RIGHT_BRACKET  &kp LS(RIGHT_BRACKET)  &kp LEFT_SHIFT    &trans                  &mkp LCLK        &trans           &trans           &trans           &trans           &trans
+&kp F11       &kp F1            &kp F2            &kp F3             &kp F4                &kp F5                   &mmv MOVE_UP     &kp F6           &kp F7           &kp F8           &kp F9           &kp F10       &to 3
+&kp LS(SEMI)  &kp LS(NUMBER_1)  &kp LS(COMMA)     &kp LS(DOT)        &kp LS(LEFT_BRACKET)  &kp LS(RIGHT_BRACKET)    &mmv MOVE_DOWN   &kp KP_PLUS      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS  &kp F12
+&kp LS(APOS)  &kp MINUS         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LS(NUMBER_9)      &kp LS(NUMBER_0)         &mmv MOVE_LEFT   &kp KP_MULTIPLY  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS  &kp BACKSPACE
+&mo 2         &kp LS(BSLH)      &kp LS(MINUS)     &kp EQUAL          &kp LS(EQUAL)         &kp LS(FSLH)             &mmv MOVE_RIGHT  &kp KP_DIVIDE    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT    &kp INS
+&kp C_MUTE    &to 0             &none             &trans             &trans                &trans                   &mkp LCLK        &trans           &trans           &trans           &kp KP_NUMBER_0  &kp KP_DOT
             >;
 
             display-name = "layer1";
@@ -73,11 +73,11 @@
 
         layer_2 {
             bindings = <
-&kp ESC  &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &mmv MOVE_UP     &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2       &bt BT_SEL 3  &bt BT_CLR   &to 3
-&kp K    &bt BT_CLR      &kp Q         &kp W         &kp E         &kp R           &mmv MOVE_DOWN   &bt BT_CLR_ALL  &kp F5        &kp UP             &kp F12       &kp UNDER    &kp PLUS
-&kp H    &kp LEFT_SHIFT  &kp A         &kp S         &kp D         &kp F           &mmv MOVE_LEFT   &trans          &kp LEFT      &kp DOWN           &kp RIGHT     &kp LBRC     &kp RBRC
-&kp L    &kp T           &kp Z         &kp X         &kp C         &kp V           &mmv MOVE_RIGHT  &trans          &trans        &sys_reset         &soft_off     &bootloader  &trans
-&trans   &kp M           &kp B         &kp LCTRL     &kp SPACE     &kp G           &mkp LCLK        &tdCS           &kp RETURN    &kp K_APPLICATION  &trans        &trans
+&kp ESC  &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &mmv MOVE_UP     &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2       &bt BT_SEL 3  &bt BT_CLR   &to 3
+&kp K    &bt BT_CLR      &kp Q         &kp W         &kp E         &kp R           &mmv MOVE_DOWN   &bt BT_CLR_ALL  &kp F5          &kp UP             &kp F12       &kp UNDER    &kp PLUS
+&kp H    &kp LEFT_SHIFT  &kp A         &kp S         &kp D         &kp F           &mmv MOVE_LEFT   &trans          &kp LEFT        &kp DOWN           &kp RIGHT     &kp LBRC     &kp RBRC
+&kp L    &kp T           &kp Z         &kp X         &kp C         &kp V           &mmv MOVE_RIGHT  &trans          &trans          &sys_reset         &soft_off     &bootloader  &trans
+&trans   &kp M           &kp B         &kp LCTRL     &kp SPACE     &kp G           &mkp LCLK        &tdCA           &kp LEFT_SHIFT  &kp K_APPLICATION  &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT_BRACKET LEFT_BRACKET>;
@@ -91,6 +91,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp 0 0>;
         };
     };
 };
