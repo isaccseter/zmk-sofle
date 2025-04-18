@@ -40,6 +40,12 @@
             tapping-term-ms = <200>;
             bindings = <&kp LCTRL>, <&kp LA(LCTRL)>;
         };
+        tdCS: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LCTRL>, <&kp LS(LCTRL)>;
+        };
     };
 
     keymap {
@@ -51,7 +57,7 @@
 &mt LG(TAB) TAB    &kp Q   &kp W       &kp E                  &kp R      &kp T     &kp PAGE_DOWN  &kp Y           &kp U      &kp I      &kp O               &kp P          &kp BSLH
 &kp BACKSPACE      &kp A   &kp S       &kp D                  &kp F      &kp G     &kp HOME       &kp H           &kp J      &kp K      &kp L               &kp SEMI       &kp APOS
 &mo 2              &kp Z   &kp X       &kp C                  &kp V      &kp B     &kp END        &kp N           &kp M      &kp COMMA  &kp DOT             &kp FSLH       &kp GRAVE
-&kp K_APPLICATION  &to 1   &kp DELETE  &mt LEFT_ALT CAPSLOCK  &kp SPACE  &tdCA     &kp RETURN     &kp LEFT_SHIFT  &kp ENTER  &mo 2      &mt LG(X) LEFT_WIN  &kp LC(SPACE)
+&kp K_APPLICATION  &to 1   &kp DELETE  &mt LEFT_ALT CAPSLOCK  &kp SPACE  &tdCA     &kp RETURN     &kp LEFT_SHIFT  &kp ENTER  &mo 1      &mt LG(X) LEFT_WIN  &kp LC(SPACE)
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -77,7 +83,7 @@
 &kp K    &bt BT_CLR      &kp Q         &kp W         &kp E         &kp R           &mmv MOVE_DOWN   &bt BT_CLR_ALL  &kp F5          &kp UP             &kp F12       &kp UNDER    &kp PLUS
 &kp H    &kp LEFT_SHIFT  &kp A         &kp S         &kp D         &kp F           &mmv MOVE_LEFT   &trans          &kp LEFT        &kp DOWN           &kp RIGHT     &kp LBRC     &kp RBRC
 &kp L    &kp T           &kp Z         &kp X         &kp C         &kp V           &mmv MOVE_RIGHT  &trans          &trans          &sys_reset         &soft_off     &bootloader  &trans
-&trans   &kp M           &kp B         &kp LCTRL     &kp SPACE     &kp G           &mkp LCLK        &tdCA           &kp LEFT_SHIFT  &kp K_APPLICATION  &trans        &trans
+&trans   &kp M           &kp B         &kp LCTRL     &kp SPACE     &kp G           &mkp LCLK        &tdCS           &kp LEFT_SHIFT  &kp K_APPLICATION  &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp RIGHT_BRACKET LEFT_BRACKET>;
