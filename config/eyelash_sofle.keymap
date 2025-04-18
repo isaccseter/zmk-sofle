@@ -40,7 +40,7 @@
             tapping-term-ms = <200>;
             bindings = <&kp LCTRL>, <&kp LA(LCTRL)>;
         };
-        tdCS: tap_dance_0 {
+        tdCS: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
