@@ -40,7 +40,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
-  - '3'
+  - '2'
   - Z
   - X
   - C
@@ -79,7 +79,7 @@ layers:
   - F9
   - F10
   - {t: '3', h: toggle}
-  - {t: Sft+;, s: 'Sft+:'}
+  - {t: Sft+\, s: Sft+|}
   - Sft+1
   - {t: 'Sft+,', s: Sft+<}
   - {t: Sft+., s: Sft+>}
@@ -106,7 +106,7 @@ layers:
   - KP MINUS
   - {t: '$$mdi:backspace$$', type: backspace}
   - '2'
-  - {t: Sft+\, s: Sft+|}
+  - {t: Sft+;, s: 'Sft+:'}
   - {t: Sft+-, s: Sft+_}
   - {t: '=', s: +}
   - {t: Sft+=, s: Sft++}
@@ -119,7 +119,7 @@ layers:
   - KP DOT
   - INS
   - $$mdi:volume-off$$
-  - {t: LAYER0, h: toggle}
+  - {t: layer1, h: toggle}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -170,7 +170,7 @@ layers:
   - $$mdi:arrow-right-bold$$
   - '{'
   - '}'
-  - {t: L, type: held alternate}
+  - {t: L, type: held}
   - T
   - Z
   - X
@@ -192,7 +192,7 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   - '&tdCA'
   - $$mdi:apple-keyboard-shift$$
-  - {t: APPLICATION, type: held}
+  - {t: APPLICATION, type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   '3':
@@ -208,7 +208,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: LAYER0, h: toggle}
+  - {t: layer1, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -235,7 +235,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
