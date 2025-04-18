@@ -62,7 +62,7 @@ layers:
   - RETURN
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - '2'
+  - layer1
   - {t: LEFT WIN, h: X}
   - Ctl+$$mdi:keyboard-space$$
   layer1:
@@ -127,7 +127,7 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - KP 0
   - KP DOT
   '2':
@@ -190,8 +190,8 @@ layers:
   - $$mdi:keyboard-space$$
   - G
   - $$mdi:mouse-left-click-outline$$
-  - '&tdCA'
+  - '&tdCS'
   - $$mdi:apple-keyboard-shift$$
-  - {t: APPLICATION, type: held alternate}
+  - APPLICATION
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
