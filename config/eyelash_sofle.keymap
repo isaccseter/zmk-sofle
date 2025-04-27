@@ -56,7 +56,7 @@
 &kp C_MUTE      &kp CAPSLOCK  &winx   &kp LEFT_ALT  &kp SPACE  &kp LCTRL    &kp ENTER      &kp RETURN  &mo 1   &kp RIGHT_SHIFT  &mo 2    &kp DELETE
             >;
 
-            sensor-bindings = <&inc_dec_kp BACKSPACE DELETE>;
+            sensor-bindings = <&inc_dec_kp DELETE BACKSPACE>;
             display-name = "LAYER0";
         };
 
